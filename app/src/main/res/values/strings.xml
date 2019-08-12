@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DoorDashTakeHome</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="deliveryFees">fee: $ %1$s.00</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/restaurant_image"
+            android:contentDescription="@string/restaurant_name"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="8dp"
+            tools:src="@mipmap/ic_launcher"/>
+    <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Resrtaurant Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/restaurant_image"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/restaurant_location"
+            android:layout_width="140dp"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            tools:text="Resrtaurant location"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/restaurant_image"
+            android:layout_below="@id/restaurant_name"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/restaurant_cusine"
+            android:lines="2"
+            android:layout_width="140dp"
+            android:maxLines="3"
+            android:layout_height="wrap_content"
+            tools:text="Resrtaurant Cusinise"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/restaurant_image"
+            android:layout_below="@id/restaurant_location"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/restaurant_distance"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            tools:text="Resrtaurant Distance"
+            android:maxLines="2"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/restaurant_name"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/restaurant_delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Resrtaurant fees"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/restaurant_distance"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/background_dark"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/restaurant_image"/>
+
+</RelativeLayout>
